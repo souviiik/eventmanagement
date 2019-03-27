@@ -19,7 +19,7 @@ class Main extends React.Component {
           <Route path="/add-events" component={AddEventComponent} />
           <Route path="/view-event/:id" component={SingleViewComponent} />
           <Route path="/view-events" component={ViewComponent} />
-          <Route path="/update-event" component={UpdateEventComponent} />
+          <Route path="/update-event/:id" component={UpdateEventComponent} />
           </div>
         </Switch>
         <Footer />

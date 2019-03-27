@@ -1,0 +1,14 @@
+{
+    "PORT": "5000",
+    "PWD_SALT_ROUNDS": 10,
+    "JWT": {
+        "SECRET": "81E2IU9M4SASCG9G2TDV"
+    },
+    "MONGODB": {
+        "HOST": "127.0.0.1",
+        "PORT": "27017",
+        "DATABASE_NAME": "events-api"
+    },
+    "PAGE_OFFSET":2,
+    "PAGE_LIMIT":3
+}

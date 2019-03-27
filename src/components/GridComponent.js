@@ -23,7 +23,7 @@ class GridComponent extends React.Component {
             <div className="col-md-6">
                 <div className="card">
                     <div className="card-body">
-                        <h5 className="card-title">{event._id + 1}. {event.name}</h5>
+                        <h5 className="card-title">{event._id + 1}<br /><span className="text-primary">{event.name}</span></h5>
                         <p className="card-text">Event Type: {event.type}<br/>
                         Length: {event.length} mins<br/>
                         Views: {event.views}<br/>
@@ -31,7 +31,7 @@ class GridComponent extends React.Component {
 
                         <Link to={`/view-event/${event._id}`} className="btn btn-sm btn-primary mr-1"><FaRegEye /> View</Link>
                         {isSignedIn && <Fragment>
-                        <Link to={{ pathname: '/update-event', state: event }} className="btn btn-sm btn-primary mr-1"><FaRegEdit /> Update</Link>
+                        <Link to={{ pathname: `/update-event/${event._id}`, state: event }} className="btn btn-sm btn-primary mr-1"><FaRegEdit /> Update</Link>
                         <a href="#" className="btn btn-sm btn-danger"><FaTrashAlt /> Delete</a>
                         </Fragment>
                         }

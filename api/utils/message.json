@@ -1,0 +1,5 @@
+{
+	"EventDeleted": "Event deleted successfully.",
+    "EventModified": "Event modified successfully.",
+    "EventNoModificationFound": "Sorry, no modification found."
+}

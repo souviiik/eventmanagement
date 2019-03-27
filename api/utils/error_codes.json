@@ -1,0 +1,14 @@
+{
+	"ValidationError": {
+		"4000": "Wrong email or password used."		
+	},
+	"MongoError": {
+		"5000": "Duplicate user found."
+	},
+	"GenericError": {
+		"6000": "Internal error please try again.",
+		"6001": "Incorrect email or password.",
+		"6002": "Un-authorized access.",
+		"6003": "Event id not found."
+	}
+}

@@ -1,15 +1,16 @@
-import { SIGN_IN, SIGN_OUT } from '../actions/events.action';
+import { SIGN_IN, SIGN_OUT } from '../actions/Types';
 
 export const INITIAL_STATE = {
-    isSignedIn: null
+    isSignedIn: null,
+    userName: null,
 };
 
 export default (state = INITIAL_STATE, action) => {
     switch(action.type) {
         case SIGN_IN:
-            return { ...state, isSignedIn: true };
+            return { ...state, isSignedIn: true, userName: action.payload };
         case SIGN_OUT:
-            return { ...state, isSignedIn: false };
+            return { ...state, isSignedIn: false, userName: null };
         default:
             return state;
     }
